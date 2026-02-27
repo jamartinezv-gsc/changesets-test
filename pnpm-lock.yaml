@@ -12,6 +12,20 @@ importers:
         specifier: ^2.29.8
         version: 2.29.8
 
+  packages/core: {}
+
+  packages/site-a:
+    dependencies:
+      '@dai/core':
+        specifier: workspace:*
+        version: link:../core
+
+  packages/site-b:
+    dependencies:
+      '@dai/core':
+        specifier: workspace:*
+        version: link:../core
+
 packages:
 
   '@babel/runtime@7.28.6':
